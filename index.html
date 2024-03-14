@@ -8,17 +8,44 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="destop-nav">
+
+    <!--navigation for web-->
+    <nav id="desktop-nav">
         <div class="logo">Tyler Gaucher</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#github">Github</a></li>
+                <li><a href="https://github.com/gboness">Github</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!--navigation for mobile-->
+    <nav id="hamburger-nav">
+        <div class="logo">Tyler Gaucher</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="https://github.com/gboness" onclick="toggleMenu()">Github</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile"
+        </div>
+    </section>
     <script src="script.js"></script>
+
 </body>
 </html>
