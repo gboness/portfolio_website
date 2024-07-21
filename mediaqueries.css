@@ -10,8 +10,6 @@
 
 }
 
-
-
 /* when screen size is less than 1200px the desktop nav will disappear and show hamburger nav*/
 @media screen and (max-width: 1200px) {
     #desktop-nav {
