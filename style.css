@@ -270,6 +270,7 @@ section {
 
 #about {
     position: relative;
+    
 }
 
 .about-containers {
@@ -308,6 +309,7 @@ section {
 }
 
 .section-container {
+    justify-content: center;
     gap: 4rem;
     height: 80%;
 }
