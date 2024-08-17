@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
+
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <section id="boxID">
+        <section id="tabsSec">
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')">Active</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Completed</button>
+            </div>
+        </section>
+        
+
+        <!-- Tab One -->
+        <div id="Tab1" class="tabcontent">
+            <div class="checkbox">
+                <label for="inputText"><h4>Todays Tasks:</h4></label>
+                <input type="text" id="inputText" placeholder="Enter tasks here!" oninput="checkInput()">
+                <button id="submitButton" onclick="generateCheckbox()" disabled>Submit</button>
+        
+                <div class="check-boxes" id="checkBoxesContainer"></div>
+            </div>
+        </div>
+    
+        <!-- Tab Three -->
+        <div id="Tab2" class="tabcontent">
+            <h4>Todays Completed Tasks!</h4>
+            <div class="deleted-info" id="deletedItemsContainer"></div>
+         </div>
+
+    </section>
+
+
+</body>
+
+
+
