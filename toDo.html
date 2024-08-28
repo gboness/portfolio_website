@@ -2,13 +2,46 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./to-do-list/styles.css"/>
+    <link rel="stylesheet" href="./to-do-list/mediaquery.css"/>
+
     <script src="script.js"></script>
 
     <title>To Do List</title>
 </head>
 
 <body>
+
+
+    <!--navigation for web-->
+    <nav id="desktop-nav">
+        <div class="logo">Tyler Gaucher</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#experience">Experience</a></li>
+                <li><a href="https://github.com/gboness">Github</a></li>
+                <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!--navigation for mobile-->
+    <nav id="hamburger-nav">
+        <div class="logo">Tyler Gaucher</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+
+            </div>
+        </div>
+    </nav>
+
 
     <section id="boxID">
         <section id="tabsSec">
@@ -22,7 +55,7 @@
         <!-- Tab One -->
         <div id="Tab1" class="tabcontent">
             <div class="checkbox">
-                <label for="inputText"><h4>Todays Tasks:</h4></label>
+                <label for="inputText"><h3>Todays Tasks:</h3></label>
                 <input type="text" id="inputText" placeholder="Enter tasks here!" oninput="checkInput()">
                 <button id="submitButton" onclick="generateCheckbox()" disabled>Submit</button>
         
@@ -38,7 +71,7 @@
 
     </section>
 
-
+    <script src="./to-do-list/script.js"></script>
 </body>
 
 

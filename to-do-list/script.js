@@ -97,3 +97,13 @@ function openTab(evt, tabName) {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.tablinks').click();
 });
+
+
+/* Hamburger Nav */
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu-links');
+    const icon = document.querySelector('.hamburger-icon');
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+}
