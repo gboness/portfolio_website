@@ -48,6 +48,9 @@
     #contact, footer {
         height: 40vh;
     }
+    #boxId {
+        flex-wrap: wrap;
+    }
     #profile {
         height: 83vh;
         margin-bottom: 0;
@@ -59,3 +62,4 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
+}
