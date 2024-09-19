@@ -42,3 +42,17 @@ section {
     font-size: 3rem;
     text-align: center;
 }
+
+
+/* img scroll container */
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    height: 400px;
+    width: 400px;
+  }
+  
+  div.scroll-container img {
+    width: 400px;
+    height: 400px;
+  }
