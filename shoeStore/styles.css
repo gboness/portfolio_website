@@ -56,3 +56,17 @@ div.scroll-container {
     width: 400px;
     height: 400px;
   }
+
+  /*  PHOTO BUTTON STYLING */
+
+  #switchButton {
+    background-color: transparent;
+    height: 50px;
+    width: auto;
+
+    justify-content: center;
+    float: none;
+    border: 1px solid black;
+    border-radius: 15px;
+
+  }
