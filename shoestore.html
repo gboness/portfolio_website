@@ -16,13 +16,16 @@
 
     <!--navigation for web-->
     <nav id="desktop-nav">
-        <div class="logo">Tyler Gaucher</div>
+        <div class="logo">The Shoe Store</div>
         <div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#experience">Experience</a></li>
-                <li><a href="https://github.com/gboness">Github</a></li>
-                <li><a href="#contact">Contact</a></li> -->
+                <li>
+                    <a href="/cart" class="cart-link">Cart</a>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge"></span>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -47,7 +50,8 @@
         <div class="section__pic-container">
             <div class="scroll-container">
                 <img src="/asset/drago-lv.jpg" alt="drago-lv"/>
-                <img src="/asset/furia-air.jpg" alt="'furisd">
+                <img src="/asset/drago-lv.jpg" alt="drago-lv"/>
+                
             </div>
         </div>
         <div class="section__text">
@@ -60,79 +64,83 @@
             </p>
             <p>$219.00 usd</p>
 
-            <form>
+            <form id="sizeForm">
                 <select name="Size" id="sizes">
                     <option value="38">38</option>
                     <option value="38.5">38.5</option>
                     <option value="39">39</option>
                     <option value="39.5">39.5</option>
                 </select>
-                <br><br>
-                <input type="submit" value="Add to bag">
+                <br></br>
+                <input class="cartBtn btn-color-2" type="submit" value="Add to cart"> 
             </form>
         </div>
     </section>
-
-    <section  id="shoes">
+    <section id="shoes">
         <div class="section__pic-container">
-            <img src="/asset/furia-air.jpg" alt="furia-air"/>
-            <img src="/asset/furia-air.jpg" alt="'furisd">
-            <br><br>
-            <button id="clickme" onclick="changeImage();">Click to change image!</button>
+            <div class="scroll-container">
+                <img src="/asset/furia-air.jpg" alt="furia-air"/>
+
+                
+            </div>
         </div>
         <div class="section__text">
             <h1 class="shoe-name">Furia Air</h1>
             <p class="section__text__p2">
-                Sensitivity redefined, the new Furia Air brings a second skin feeling to a climbers foot, 
-                featuring a cutting edge design combined with the most advanced materials to create a climbing 
-                shoe that allows the foot to be fully engaged when climbing, at an incredibly low weight. 
-                The sensitivity and performance of the Furia Air must be experienced to be believed!
+                Sensitivity redefined, the new Furia Air brings a second skin feeling 
+                to a climbers foot, featuring a cutting edge design combined with the 
+                most advanced materials to create a climbing shoe that allows the foot 
+                to be fully engaged when climbing, at an incredibly low weight. The 
+                sensitivity and performance of the Furia Air must be experienced to be believed
             </p>
             <p>$219.00 usd</p>
 
-            <form>
+            <form id="sizeForm">
                 <select name="Size" id="sizes">
                     <option value="38">38</option>
                     <option value="38.5">38.5</option>
                     <option value="39">39</option>
                     <option value="39.5">39.5</option>
                 </select>
-                <br><br>
-                <input type="submit" value="Add to bag">
+                <br></br>
+                <input class="cartBtn btn-color-2" type="submit" value="Add to cart"> 
             </form>
-
         </div>
     </section>
 
     <section id="shoes">
         <div class="section__pic-container">
-            <img src="/asset/instinct-VSR.jpg" alt="Instinct VSR"/>
+            <div class="scroll-container">
+                <img src="/asset/instinct-VSR.jpg" alt="instinct-VSR"/>
+
+                
+            </div>
         </div>
         <div class="section__text">
             <h1 class="shoe-name">Instinct VSR</h1>
             <p class="section__text__p2">
-                A more supple version of our award-winning Instinct VS, the Instinct VSR features Vibram® 
-                Grip2 rubber which provides more grip and sensitivity while still providing the same form-fitting, 
-                sock-style fit that excels across the spectrum of hard climbing. Perfect for climbers that want 
-                all the features and benefits of our best-selling Instinct VS, but with stickier rubber.
+                A more supple version of our award-winning Instinct VS, the Instinct 
+                VSR features Vibram® Grip2 rubber which provides more grip and 
+                sensitivity while still providing the same form-fitting, sock-style 
+                fit that excels across the spectrum of hard climbing. Perfect for 
+                climbers that want all the features and benefits of our best-selling 
+                Instinct VS, but with stickier rubber.
             </p>
             <p>$219.00 usd</p>
 
-            <form>
+            <form id="sizeForm">
                 <select name="Size" id="sizes">
                     <option value="38">38</option>
                     <option value="38.5">38.5</option>
                     <option value="39">39</option>
                     <option value="39.5">39.5</option>
                 </select>
-                <br><br>
-                <input type="submit" value="Add to bag">
+                <br></br>
+                <input class="cartBtn btn-color-2" type="submit" value="Add to cart"> 
             </form>
         </div>
-
-
-
     </section>
+
 
 </body>
 </html>

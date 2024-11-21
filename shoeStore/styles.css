@@ -1,3 +1,8 @@
+
+/* font for website */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 section {
     padding-top: 4vh;
     height: 85vh;
@@ -27,6 +32,7 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
+    max-width: 600px;
 }
 
 .secttion__text p {
@@ -45,14 +51,65 @@ section {
 
 
 /* img scroll container */
-div.scroll-container {
-    overflow: auto;
+.scroll-container {
+    overflow: hidden;
     white-space: nowrap;
     height: 400px;
     width: 400px;
   }
   
-  div.scroll-container img {
+  .scroll-container img {
     width: 400px;
     height: 400px;
   }
+
+
+  /* Cart icon styling */
+
+  .cart-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cart-badge {
+    position: absolute;
+    top: 55px;
+    color: white;
+    background-color: rgb(53,53,53);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 7px;
+    display: none; /* Initially hidden */
+  }
+
+  .cart-badge.active {
+    display: inline-block; /* Show badge when active */
+  }
+
+
+ /* add to cart button */
+.cartBtn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 7rem;
+    border-radius: 2rem;
+    background: none
+}
+
+.cartBtn {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+ 
+.cartBtn:hover {
+    cursor: pointer;
+}
+
+.cartBtn:hover {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.cartBtn:hover {
+    border: rgb(255,255,255) 0.1rem solid;
+}
