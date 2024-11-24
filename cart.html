@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./to-do-list/styles.css"/>
+    <link rel="stylesheet" href="./to-do-list/mediaquery.css"/>
+    <link rel="stylesheet" href="./shoeStore/styles.css"/>
+    <link rel="stylesheet" href="./cart/style.css"/>
+
+    <script src="/shoeStore/script.js"></script>
+
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!--navigation for web-->
+    <nav id="desktop-nav">
+        <div class="logo">The Shoe Store</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoestore.html">Store</a></li>
+                <li>
+                    <a href="/cart" class="cart-link">Cart</a>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge"></span>
+                </li>
+    
+            </ul>
+        </div>
+    </nav>
+    
+     <!--navigation for mobile-->
+    <nav id="hamburger-nav">
+        <div class="logo">Tyler Gaucher</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+    
+            </div>
+        </div>
+    </nav>
+
+    <section class="message">
+        <div class="alertMessage">
+            <h2> Hey you can't actually buy stuff here! </h2>
+            
+            <h2>Instead Visit:  <a href="https://us.scarpa.com/">SCARPA</href></h2>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>

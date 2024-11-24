@@ -2,6 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('sizeForm');
+    const furia = document.getElementById('furiaForm');
+    const instinct = document.getElementById('instinctForm');
+
     const cartBadge = document.getElementById('cartBadge');
     let cartCount = 0;
   
@@ -18,4 +21,28 @@ document.addEventListener('DOMContentLoaded', function () {
       // Optional: Reset form fields
       form.reset();
     });
+
+    furia.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      cartCount++;
+
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.add('active');
+
+      form.reset();
+    });
+
+    instinct.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      cartCount++;
+
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.add('active');
+
+      form.reset();
+    });
+
+
   });
