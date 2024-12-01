@@ -405,7 +405,12 @@ footer p {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
+    width: 80%;
+    height: 90%;
+}
+
+.shoe-img {
+    width: 53.5%;
     height: 90%;
 }
 
