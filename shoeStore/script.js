@@ -1,14 +1,48 @@
+// Function to add badge to "cart" in nav bar when item is added
 
-// change photo function
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('sizeForm');
+    const furia = document.getElementById('furiaForm');
+    const instinct = document.getElementById('instinctForm');
 
-function changeImage() {
-    var img = document.getElementById("image");
-    img.src="/asset/drago-lv.jpg";
-    return false;
-}
+    const cartBadge = document.getElementById('cartBadge');
+    let cartCount = 0;
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent actual form submission
+      
+      // Increment cart count
+      cartCount++;
+      
+      // Update badge and show it
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.add('active');
+  
+      // Optional: Reset form fields
+      form.reset();
+    });
 
-function changeImageBack() {
-    var img = document.getElementById("image");
-    img.src="/asset/furia-air.jpg";
-    return false;
-}
+    furia.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      cartCount++;
+
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.add('active');
+
+      form.reset();
+    });
+
+    instinct.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      cartCount++;
+
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.add('active');
+
+      form.reset();
+    });
+
+
+  });
