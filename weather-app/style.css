@@ -24,10 +24,11 @@
     font-size: 5rem;
 }
 
-.time-location {
+.time-location , .searchLocation {
     font-size: 1.5rem;
     font-family: poppins;
 }
+
 
 .condition {
     font-size: 1.3rem;
