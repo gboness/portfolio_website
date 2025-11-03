@@ -45,3 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   });
+
+
+function addToCart(shoeName, price) {
+    // Retrieve the existing cart from localStorage or create a new array
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add new item
+    cart.push({
+        name: shoeName,
+        price: price
+    });
+
+    // Save it back into localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+    }

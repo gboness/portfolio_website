@@ -127,19 +127,16 @@ section {
     border: rgb(255,255,255) 0.1rem solid;
 }
 
-
-section.shippingAndCard {
-    margin-top: 4rem; /* or height of nav (eg: 60px) */
-
+section .shippingAndCard {
+    margin-top: 20rem;
 }
-
 
 /* CHECKOUT FORM */
 #checkout-form {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto;
-    border: 1px solid rgb(53, 53, 53);
+    border: 2px solid black;
     border-radius: 15px;
     width: 50%;
     margin-left: 25%;
