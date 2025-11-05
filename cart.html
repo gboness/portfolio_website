@@ -4,9 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./to-do-list/styles.css"/>
     <link rel="stylesheet" href="./to-do-list/mediaquery.css"/>
+    <link rel="stylesheet" href="./homepage/style.css"/>
     <link rel="stylesheet" href="./shoeStore/styles.css"/>
     <link rel="stylesheet" href="./cart/style.css"/>
-    <link rel="stylesheet" href="./shoestore/cart.css"
+    <link rel="stylesheet" href="./shoestore/cart.css"/>
 
         <!-- scripts moved to end of body for proper DOM access -->
 
@@ -46,7 +47,7 @@
     <section class="shippingAndCard">
 
         <!-- Checkout Form -->
-        <h2>Shipping & Payment Information</h2>
+        <h2 id="shipping2">Shipping & Payment Information</h2>
         <form id="checkout-form">
             <h3>Shipping Information</h3>
             <label>Name: <input type="text" name="name" required></label><br>
@@ -58,17 +59,20 @@
             <label>Card Number: <input type="text" name="cardNumber" required></label><br>
             <label>Expiration: <input type="text" name="expiry" placeholder="MM/YY" required></label><br>
             <label>CVV: <input type="text" name="cvv" required></label><br><br>
-            
-            <!-- Cart Items -->
+
+        </form>       
+
+        <!-- Cart Items -->
             <div id="cartItems"></div>
             <h3 id="totalPrice">Total: $0</h3>
 
+            <div class="btn-container">
+                <button type="button" id="clearCart" class="btn btn-color-2">Clear Cart</button>
+                <button type="submit" class="btn btn-color-2">Place Order</button>
+            </div>
 
-            <button type="button" id="clearCart">Clear Cart</button>
-            <button type="submit">Place Order</button>
 
-        </form>
-
+            <!-- need to add styling to make buttons, total, and images of what is being purchased to the right side of the cart -->
         
     </section>
 
